@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import got from 'got';
 import crypto from 'crypto';
+import axios from 'axios';
 
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
@@ -41,15 +41,12 @@ export async function GET(req) {
     console.log('Generated Signature:', hash);
     console.log('Final Query String:', queryString);
 
-    const data = await got
-      .get(`http://api.issuu.com/1_0?${queryString}`, {
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        }
-      })
-      .json();
-
+    const { data } = await axios.get(`http://api.issuu.com/1_0?${queryString}`, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      }
+    });
     console.log('d', data.rsp['_content']);
 
     return NextResponse.json(data.rsp['_content']['result']['_content']);

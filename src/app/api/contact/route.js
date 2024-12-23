@@ -1,21 +1,19 @@
+import axios from 'axios';
 import { NextResponse } from 'next/server';
-import got from 'got';
 
 export async function POST(req) {
   try {
     // Parse the incoming request body
     const body = await req.json();
 
-    const data = await got
-      .post('https://api.sendinblue.com/v3/contacts', {
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-          'api-key': process.env.SENDINBLUE_KEY
-        },
-        json: body
-      })
-      .json();
+    const { data } = await axios.post('https://api.sendinblue.com/v3/contacts', {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'api-key': process.env.SENDINBLUE_KEY
+      },
+      json: body
+    });
 
     // Return the response data
     return NextResponse.json(data);
