@@ -1,24 +1,28 @@
 'use client'; // Mark this as a client component
-import { useEffect, useState } from 'react';
+
+import { useEffect, useState, Suspense } from 'react';
 import axios from 'axios';
 import Hero from '@/src/components/listing/Hero';
 import CourseCard from '@/src/components/shared/CourseCard';
 import { useSearchParams } from 'next/navigation';
 
-export default function SearchCourses() {
+function SearchCoursesContent() {
   const [searchBundles, setSearchBundles] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   const searchParams = useSearchParams();
-  // Query parameter passed through the URL
-  const query = searchParams.get('q');
+  const query = searchParams.get('q'); // Query parameter passed through the URL
+
   const fetchCourses = async () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
         `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_counts=1&search=${query}`
       );
+
       console.log('search results', data);
+
       // Combine the course bundles
       const allCourse = [
         ...(data.institute_courses?.[0]?.course_bundles || []),
@@ -33,6 +37,7 @@ export default function SearchCourses() {
       setLoading(false);
     }
   };
+
   useEffect(() => {
     console.log('query', query);
     if (query) {
@@ -45,7 +50,7 @@ export default function SearchCourses() {
   }, [query]);
 
   return (
-    <section className="bg-cloud">
+    <>
       <Hero searchBased={query ? 'Explore Courses' : 'Explore'} />
 
       {loading ? (
@@ -65,6 +70,16 @@ export default function SearchCourses() {
       ) : (
         <h2 className="my-10 text-center text-4xl font-bold">What are you looking for?</h2>
       )}
+    </>
+  );
+}
+
+export default function SearchCourses() {
+  return (
+    <section className="bg-cloud">
+      <Suspense fallback={<h2 className="my-10 text-center text-2xl font-semibold">Loading...</h2>}>
+        <SearchCoursesContent />
+      </Suspense>
     </section>
   );
 }
