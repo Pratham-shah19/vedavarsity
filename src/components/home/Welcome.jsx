@@ -22,7 +22,7 @@ const WelcomeSection = () => {
 
           <CoolMode>
             <Button
-              href={'/live-courses'}
+              href={'https://whatsapp.com/channel/0029Var5TSW6RGJMUXDTYb1b'}
               className="mt-4 rounded bg-black px-6 py-2 text-white transition duration-300 hover:bg-gray-800">
               Join Our Community
             </Button>

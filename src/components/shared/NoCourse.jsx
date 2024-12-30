@@ -5,7 +5,7 @@ const NoCourse = () => {
   return (
     <div className="flex min-h-[50vh] flex-col items-center justify-center text-center">
       {/* Centered Image */}
-      <Image src={empty} alt="no course" width={350} height={225} className="mx-auto" />
+      <Image src={empty} alt="no course" width={320} height={225} className="mx-auto" />
 
       {/* Title */}
       <h3 className="my-3 text-2xl font-bold">Coming Soon</h3>

@@ -9,7 +9,7 @@ const CourseListingSection = ({ liveCourses, schoolOfLoveCourses }) => {
         <CategoryHeading libraryLink="/live-courses" title="Live courses" />
         <CourseFilterTab instituteCourses={liveCourses} title="Live courses" />
 
-        <div className="my-8 lg:my-16"></div>
+        <div className="my-12 lg:my-16"></div>
 
         <CategoryHeading libraryLink="/school-of-love" title="School Of Love" />
         <CourseFilterTab instituteCourses={schoolOfLoveCourses} title="School Of Love" />
