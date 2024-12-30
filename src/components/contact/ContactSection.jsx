@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { ContactCard } from './ContactCard';
+import { vedavarsityEmail, vedavarsityPhone } from '@/src/data/contact';
 
 export function ContactSection() {
   return (
@@ -10,7 +11,7 @@ export function ContactSection() {
             icon={Mail}
             title="Email"
             subtitle="Our friendly team is here to help."
-            contact="hi@user.com"
+            contact={vedavarsityEmail}
             isLink={true}
           />
           <ContactCard
@@ -23,7 +24,7 @@ export function ContactSection() {
             icon={Phone}
             title="Phone"
             subtitle="Mon-Fri from 8am to 7pm."
-            contact="+1 (555) 000-0000"
+            contact={vedavarsityPhone}
             isLink={true}
           />
         </div>

@@ -1,4 +1,5 @@
 'use client';
+import { subTitles } from '@/src/data/courseSubTitles';
 import courseTypeMap from '@/src/data/courseTypeMap';
 import { categoriesID, languageTagID } from '@/src/data/tags';
 import axios from 'axios';
@@ -61,10 +62,7 @@ export default function CourseDescription() {
 
   return (
     <>
-      <Hero
-        subTitle="Preserving Tradition, Inspiring the Future."
-        searchBased={title.split('-').join(' ')}
-      />
+      <Hero subTitle={subTitles[title]} searchBased={title.split('-').join(' ')} />
       {vedvarsity.length > 0 && (
         <CourseTabs
           courses={filtered || vedvarsity}

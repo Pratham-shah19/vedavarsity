@@ -29,8 +29,8 @@ const WelcomeSection = () => {
           </CoolMode>
         </div>
 
-        <div className="flex justify-end  md:w-1/2">
-          <img src="/inss-logo.png" alt="INSS Logo" className="md:w-120 w-80 object-contain " />
+        <div className="flex justify-end md:w-1/2">
+          <img src="/inss-logo.png" alt="INSS Logo" className="md:w-120 xs:w-80 object-contain" />
         </div>
       </div>
     </section>
