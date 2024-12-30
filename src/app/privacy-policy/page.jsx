@@ -3,12 +3,13 @@ const PrivacyPolicy = () => {
     <section className="bg-darkcloud bg-pattern">
       <div className="m-auto max-w-6xl space-y-[120px] px-4 py-16">
         <div className="m-auto max-w-[800px] space-y-6	 text-lg font-normal text-navy ">
-          <h1 className="text-3xl font-bold capitalize text-navy ">Privacy Policy for ISKCON</h1>
+          <h1 className="text-3xl font-bold capitalize text-navy ">
+            Privacy Policy for Vedavarsity
+          </h1>
           <p>
-            At ISKCON Bhagavata Mahavidyalaya, accessible from https://ibmedu.org/, one of our main
-            priorities is the privacy of our visitors. This Privacy Policy document contains types
-            of information that is collected and recorded by ISKCON Bhagavata Mahavidyalaya and how
-            we use it.
+            At Vedavarsity, accessible from https://ibmedu.org/, one of our main priorities is the
+            privacy of our visitors. This Privacy Policy document contains types of information that
+            is collected and recorded by Vedavarsity Bhagavata Mahavidyalaya and how we use it.
           </p>
           <p>
             If you have additional questions or require more information about our Privacy Policy,
@@ -16,9 +17,9 @@ const PrivacyPolicy = () => {
           </p>
           <p>
             This Privacy Policy applies only to our online activities and is valid for visitors to
-            our website with regards to the information that they shared and/or collect in ISKCON
-            Bhagavata Mahavidyalaya. This policy is not applicable to any information collected
-            offline or via channels other than this website.
+            our website with regards to the information that they shared and/or collect in
+            Vedavarsity. This policy is not applicable to any information collected offline or via
+            channels other than this website.
           </p>
           <h2 className="text-xl font-bold text-navy">Consent</h2>
           <p>
@@ -56,46 +57,46 @@ const PrivacyPolicy = () => {
           </ul>
           <h2 className="text-xl font-bold text-navy">Log Files</h2>
           <p>
-            ISKCON Bhagavata Mahavidyalaya follows a standard procedure of using log files. These
-            files log visitors when they visit websites. All hosting companies do this and a part of
-            hosting services&lsquo; analytics. The information collected by log files include
-            internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date
-            and time stamp, referring/exit pages, and possibly the number of clicks. These are not
-            linked to any information that is personally identifiable. The purpose of the
-            information is for analyzing trends, administering the site, tracking users&lsquo;
-            movement on the website, and gathering demographic information.
+            Vedavarsity follows a standard procedure of using log files. These files log visitors
+            when they visit websites. All hosting companies do this and a part of hosting
+            services&lsquo; analytics. The information collected by log files include internet
+            protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time
+            stamp, referring/exit pages, and possibly the number of clicks. These are not linked to
+            any information that is personally identifiable. The purpose of the information is for
+            analyzing trends, administering the site, tracking users&lsquo; movement on the website,
+            and gathering demographic information.
           </p>
           <h2 className="text-xl font-bold text-navy">Cookies and Web Beacons</h2>
           <p>
-            Like any other website, ISKCON Bhagavata Mahavidyalaya uses &lsquo;cookies&lsquo;. These
-            cookies are used to store information including visitors&lsquo; preferences, and the
-            pages on the website that the visitor accessed or visited. The information is used to
-            optimize the users&lsquo; experience by customizing our web page content based on
-            visitors&lsquo; browser type and/or other information.
+            Like any other website, Vedavarsity uses &lsquo;cookies&lsquo;. These cookies are used
+            to store information including visitors&lsquo; preferences, and the pages on the website
+            that the visitor accessed or visited. The information is used to optimize the
+            users&lsquo; experience by customizing our web page content based on visitors&lsquo;
+            browser type and/or other information.
           </p>
           <h2 className="text-xl font-bold text-navy">Advertising Partners Privacy Policies</h2>
           <p>
             You may consult this list to find the Privacy Policy for each of the advertising
-            partners of ISKCON Bhagavata Mahavidyalaya.
+            partners of Vedavarsity.
           </p>
           <p>
             Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web
-            Beacons that are used in their respective advertisements and links that appear on ISKCON
-            Bhagavata Mahavidyalaya, which are sent directly to users&lsquo; browser. They
-            automatically receive your IP address when this occurs. These technologies are used to
-            measure the effectiveness of their advertising campaigns and/or to personalize the
-            advertising content that you see on websites that you visit.
+            Beacons that are used in their respective advertisements and links that appear on
+            Vedavarsity, which are sent directly to users&lsquo; browser. They automatically receive
+            your IP address when this occurs. These technologies are used to measure the
+            effectiveness of their advertising campaigns and/or to personalize the advertising
+            content that you see on websites that you visit.
           </p>
           <p>
-            Note that ISKCON Bhagavata Mahavidyalaya has no access to or control over these cookies
-            that are used by third-party advertisers.
+            Note that Vedavarsity has no access to or control over these cookies that are used by
+            third-party advertisers.
           </p>
           <h2 className="text-xl font-bold text-navy">Third Party Privacy Policies</h2>
           <p>
-            ISKCON Bhagavata Mahavidyalaya&lsquo;s Privacy Policy does not apply to other
-            advertisers or websites. Thus, we are advising you to consult the respective Privacy
-            Policies of these third-party ad servers for more detailed information. It may include
-            their practices and instructions about how to opt-out of certain options.
+            Vedavarsity&lsquo;s Privacy Policy does not apply to other advertisers or websites.
+            Thus, we are advising you to consult the respective Privacy Policies of these
+            third-party ad servers for more detailed information. It may include their practices and
+            instructions about how to opt-out of certain options.
           </p>
           <p>
             You can choose to disable cookies through your individual browser options. To know more
@@ -165,11 +166,10 @@ const PrivacyPolicy = () => {
             their online activity.
           </p>
           <p>
-            ISKCON Bhagavata Mahavidyalaya does not knowingly collect any Personal Identifiable
-            Information from children under the age of 13. If you think that your child provided
-            this kind of information on our website, we strongly encourage you to contact us
-            immediately and we will do our best efforts to promptly remove such information from our
-            records.
+            Vedavarsity does not knowingly collect any Personal Identifiable Information from
+            children under the age of 13. If you think that your child provided this kind of
+            information on our website, we strongly encourage you to contact us immediately and we
+            will do our best efforts to promptly remove such information from our records.
           </p>
           <hr />
         </div>

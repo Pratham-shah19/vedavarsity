@@ -61,7 +61,10 @@ export default function CourseDescription() {
 
   return (
     <>
-      <Hero subTitle="ISKCON certified courses" searchBased={title.split('-').join(' ')} />
+      <Hero
+        subTitle="Preserving Tradition, Inspiring the Future."
+        searchBased={title.split('-').join(' ')}
+      />
       {vedvarsity.length > 0 && (
         <CourseTabs
           courses={filtered || vedvarsity}

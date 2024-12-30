@@ -7,23 +7,16 @@ import { RainbowButton } from '@/components/ui/rainbow-button';
 const WelcomeSection = () => {
   return (
     <section className="m-auto max-w-6xl px-4">
-      <div className="flex flex-col items-center justify-between md:flex-row">
+      <div className="flex flex-col-reverse items-center justify-between md:flex-row">
         <div className="mb-8 text-center md:mb-0 md:w-1/2 md:text-left">
-          <div className="mb-3 text-4xl font-bold leading-tight text-black dark:text-white">
-            <BlurIn
-              word={'Welcome to the'}
-              className="text-left text-4xl font-bold text-black dark:text-white"
-            />
-            <BlurIn
-              word={'World of Knowledge'}
-              className="text-left text-4xl font-bold text-black dark:text-white"
-            />
-          </div>
+          <BlurIn
+            word={'Welcome to Vedavarsity'}
+            className="text-left text-4xl font-bold text-black text-primary dark:text-white md:text-5xl"
+          />
 
           <TypingAnimation
-            className="text-1xl  text-left text-gray-400 dark:text-white"
-            text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua."
+            className="text-1xl text-black-400  mt-4 text-center dark:text-white md:text-left"
+            text="Preserving the legacy, Promoting the truth, Propagating the Wisdom"
             duration={20}
           />
 
@@ -31,13 +24,13 @@ const WelcomeSection = () => {
             <Button
               href={'/live-courses'}
               className="mt-4 rounded bg-black px-6 py-2 text-white transition duration-300 hover:bg-gray-800">
-              Start free trial
+              Join Our Community
             </Button>
           </CoolMode>
         </div>
 
         <div className="flex justify-end  md:w-1/2">
-          <img src="/inss-logo.png" alt="INSS Logo" className="w-120 md:w-120 object-contain" />
+          <img src="/inss-logo.png" alt="INSS Logo" className="md:w-120 w-80 object-contain " />
         </div>
       </div>
     </section>

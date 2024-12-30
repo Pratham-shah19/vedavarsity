@@ -1,13 +1,14 @@
 export const mainURL = 'https://ibmedu.org';
 
 const defaultSEO = {
-  defaultTitle: 'Iskcon Bhagavata Mahavidyalaya | Unveiling Eternal Knowledge',
-  description: 'Explore profound teachings of the Bhagavad Gita at Iskcon Bhagavata Mahavidyalaya. Learn Bhakti Shashtri, Teacher Training Course, and IDC. Enrol Now!',
+  defaultTitle: 'Vedavarsity | Unveiling Eternal Knowledge',
+  description:
+    'Explore profound teachings of the Bhagavad Gita at Iskcon Bhagavata Mahavidyalaya. Learn Bhakti Shashtri, Teacher Training Course, and IDC. Enrol Now!',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: mainURL, //TODO: Change this on Domain name change
-    site_name: 'IBMEDU',
+    site_name: 'INSS',
     images: [
       {
         url: `${mainURL}/iskconseo.png`

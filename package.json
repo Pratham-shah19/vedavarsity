@@ -1,5 +1,5 @@
 {
-  "name": "vedvarsity-iskcon",
+  "name": "vedvarsity-inss",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

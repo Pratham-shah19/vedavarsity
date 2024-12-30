@@ -2,8 +2,8 @@ import { ImLocation2 } from 'react-icons/im';
 import { MdEmail } from 'react-icons/md';
 import { RiWhatsappFill } from 'react-icons/ri';
 
-export const isckonEmail = 'info@iskconbm.org';
-export const isckonPhone = '+91 95280 06565';
+export const vedavarsityEmail = 'info@vedavarsity.com';
+export const vedavarsityPhone = '+91 95280 06565';
 
 export const contacts = [
   {
@@ -15,11 +15,11 @@ export const contacts = [
   {
     icon: <MdEmail size={32} className="text-primary" />,
     title: 'Email:',
-    content: isckonEmail
+    content: vedavarsityEmail
   },
   {
     icon: <RiWhatsappFill size={32} className="text-primary" />,
     title: 'Contact:',
-    content: isckonPhone
+    content: vedavarsityPhone
   }
 ];

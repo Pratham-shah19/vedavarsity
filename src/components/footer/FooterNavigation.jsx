@@ -1,8 +1,8 @@
 import { navLinks } from '@/src/data/navigation';
 import Link from 'next/link';
 const extras = [
-  { link: '/privacy-policy', label: 'Privacy Policy' },
-  { link: '/terms-of-use', label: 'Terms of Use' }
+  { link: '/privacy-policy', label: 'Privacy Policy' }
+  // { link: '/terms-of-use', label: 'Terms of Use' }
 ];
 
 export function Navigation() {

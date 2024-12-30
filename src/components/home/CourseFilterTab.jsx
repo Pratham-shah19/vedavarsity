@@ -31,7 +31,7 @@ const CourseFilterTab = ({ instituteCourses, enabledTabs, title }) => {
 
   // If no enabledTabs prop is provided, show all tabs
   const tabsToShow =
-    title === 'Live courses'
+    title === 'Live courses' || title === 'School Of Love'
       ? tabLists.map((tab, index) => ({ ...tab, index }))
       : categoryTabLists.map((tab, index) => ({ ...tab, index }));
 
@@ -43,7 +43,7 @@ const CourseFilterTab = ({ instituteCourses, enabledTabs, title }) => {
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <div className="flex items-center space-x-2">
           {/* Left Scroll Button */}
-          {title !== 'Live courses' && (
+          {title !== 'Live courses' && title !== 'School Of Love' && (
             <button
               onClick={() => handleScroll('left')}
               className="rounded-full bg-gray-200 p-2 shadow-md hover:bg-gray-300 md:p-3">
@@ -79,7 +79,7 @@ const CourseFilterTab = ({ instituteCourses, enabledTabs, title }) => {
           </TabList>
 
           {/* Right Scroll Button */}
-          {title !== 'Live courses' && (
+          {title !== 'Live courses' && title !== 'School Of Love' && (
             <button
               onClick={() => handleScroll('right')}
               className="rounded-full bg-gray-200 p-2 shadow-md hover:bg-gray-300 md:p-3">

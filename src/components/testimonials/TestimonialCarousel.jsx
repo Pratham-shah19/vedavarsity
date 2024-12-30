@@ -60,7 +60,7 @@ export function TestimonialsCarousel() {
           <Slider ref={sliderRef} {...settings}>
             {testimonials.map((testimony, index) => (
               <div key={index} className="flex justify-center p-4">
-                <div className="flex w-full max-w-3xl flex-col justify-between rounded-lg bg-primary p-6 text-white shadow-lg ring-2 ring-yellow-500 sm:flex-row">
+                <div className="flex h-80 w-full max-w-3xl flex-col justify-between rounded-lg bg-primary p-6 text-white shadow-lg ring-2 ring-yellow-500 sm:flex-row md:h-60">
                   {/* Rating and Score */}
                   <div className="order-last my-4 flex flex-col items-center justify-center sm:order-first sm:mb-0 sm:mr-8">
                     <div className="text-2xl font-bold">{testimony.rating?.toFixed(1) || 3.5}</div>
@@ -89,11 +89,11 @@ export function TestimonialsCarousel() {
                     {/* Profile */}
                     <div className="mb-4 flex items-center">
                       <Image
-                        src={testimony.image}
+                        src={`/avatars/${testimony.image}.png`}
                         alt={testimony.name}
                         width={50}
                         height={50}
-                        className="rounded-full border-2 border-yellow-500"
+                        className="rounded-full border-2 border-yellow-500 bg-white"
                       />
                       <div className="ml-4">
                         <h3 className="text-lg font-semibold">{testimony.name}</h3>
@@ -111,7 +111,7 @@ export function TestimonialsCarousel() {
 
           {/* Navigation Buttons */}
           <button
-            className="absolute left-4 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white p-2 shadow-md lg:left-8"
+            className="absolute -left-4 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white p-2 shadow-md lg:-left-8"
             onClick={() => sliderRef.current.slickPrev()}
             aria-label="Previous">
             <svg
@@ -125,7 +125,7 @@ export function TestimonialsCarousel() {
             </svg>
           </button>
           <button
-            className="absolute right-4 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white p-2 shadow-md lg:right-8"
+            className="absolute -right-4 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white p-2 shadow-md lg:-right-8"
             onClick={() => sliderRef.current.slickNext()}
             aria-label="Next">
             <svg

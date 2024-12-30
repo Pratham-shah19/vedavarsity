@@ -3,9 +3,9 @@ import NewsLetterSection from 'components/home/NewsLetterSection';
 import { parse } from 'node-html-parser';
 import courseTypeMap from '../data/courseTypeMap';
 import { API_URL } from '../data/constants';
-import { TestimonialsCarousel } from '../components/testimonials/testimonials-carousel';
+import { TestimonialsCarousel } from '../components/testimonials/TestimonialCarousel';
 import WelcomeSection from '../components/home/Welcome';
-import CourseLibrary from '@/src/components/home/course-library';
+import CourseLibrary from '@/src/components/home/CourseLibrary';
 import axios from 'axios';
 
 export default async function Home() {
@@ -22,6 +22,9 @@ export default async function Home() {
   );
   let selfPacedCourses = data.institute_courses[0]?.course_bundles?.filter(
     (course) => course.course_type == courseTypeMap['self-paced-courses']
+  );
+  let schoolOfLoveCourses = data.institute_courses[0]?.course_bundles?.filter(
+    (course) => course.course_type == courseTypeMap['school-of-love']
   );
 
   //get tag community value and remove br tag
@@ -40,7 +43,7 @@ export default async function Home() {
   return (
     <div className="">
       <WelcomeSection />
-      <CourseListingSection liveCourses={liveCourses} selfPacedCourses={selfPacedCourses} />
+      <CourseListingSection liveCourses={liveCourses} schoolOfLoveCourses={schoolOfLoveCourses} />
       <CourseLibrary />
       <NewsLetterSection />
       <TestimonialsCarousel />

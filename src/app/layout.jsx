@@ -8,15 +8,15 @@ import Layout from 'components/Layout';
 
 export const metadata = {
   title: {
-    default: 'Iskcon Bhagavata Mahavidyalaya | Unveiling Eternal Knowledge'
+    default: 'Vedavarsity | Unveiling Eternal Knowledge'
   },
   description:
-    'Explore profound teachings of the Bhagavad Gita at Iskcon Bhagavata Mahavidyalaya. Learn Bhakti Shashtri, Teacher Training Course, and IDC. Enrol Now!',
+    'Explore profound teachings of the Bhagavad Gita at Vedavarsity. Learn Bhakti Shashtri, Teacher Training Course, and IDC. Enrol Now!',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: mainURL, //TODO: Change this on Domain name change
-    site_name: 'IBMEDU',
+    site_name: 'INSS',
     images: [
       {
         url: `${mainURL}/iskconseo.png`
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
       </head>
-      <body data-hijacking="off" data-animation="scaleDown">
+      <body>
         <Layout>{children}</Layout>
         <NextScripts />
       </body>

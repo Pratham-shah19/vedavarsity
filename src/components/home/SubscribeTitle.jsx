@@ -3,8 +3,8 @@ import React from 'react';
 const SubscribeTitle = () => {
   return (
     <div className="space-y-8">
-      <p className="text-lg font-bold text-secondary">Read, Live and Inspire</p>
-      <h3 className="font-bold lg:text-34px text-28px">
+      <p className="text-lg font-bold text-primary">Read, Live and Inspire</p>
+      <h3 className="lg:text-34px text-28px font-bold">
         Inspire and Elevate yourself every fortnight
       </h3>
       <p className={'text-justify'}>

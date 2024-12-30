@@ -3,56 +3,50 @@ import SparklesText from '../../../components/ui/sparkles-text';
 const courses = [
   {
     icon: 'history',
-    title: 'History',
-    description:
-      'Seleksi bersama dalam penerimaan mahasiswa baru di lingkungan perguruan tinggi negeri',
+    title: 'Vedic History',
+    description: 'Preserving ancient wisdom for modern understanding.',
     iconBg: 'bg-primary'
   },
   {
     icon: 'gita_wisdom',
     title: 'Gita Wisdom',
-    description:
-      'pengetahuan yang diketahui oleh kebanyakan orang, biasanya berhubungan umum digunakan',
+    description: 'Guiding life through timeless spiritual teachings.',
     iconBg: 'bg-amber-500'
   },
   {
     icon: 'parenting',
     title: 'Parenting',
-    description:
-      'Seleksi bersama dalam penerimaan mahasiswa baru di lingkungan perguruan tinggi negeri',
+    description: 'Nurturing values with love and wisdom',
     iconBg: 'bg-primary'
   },
   {
     icon: 'bhakti_yoga',
     title: 'Bhaktiyoga',
-    description:
-      'pengetahuan yang diketahui oleh kebanyakan orang, biasanya berhubungan umum digunakan',
+    description: 'Connecting hearts through devotional practice.',
     iconBg: 'bg-emerald-500'
   },
   {
     icon: 'puranas',
     title: 'Purana',
-    description:
-      'Sistem evaluasi standar pendidikan nasional antar daerah yang dilakukan oleh Pusat Penilaian',
+    description: 'Stories that inspire and enlighten across ages.',
     iconBg: 'bg-emerald-500'
   },
   {
     icon: 'afterschool',
     title: 'After School for Kids',
-    description: 'ogi membantu manusia dalam membuat, mengubah, menyediakan informasi.',
+    description: 'Shaping young minds with culture and creativity.',
     iconBg: 'bg-amber-500'
   },
   {
     icon: 'sanskrit',
     title: 'Sanskrit',
-    description:
-      'Sistem evaluasi standar pendidikan nasional antar daerah yang dilakukan oleh Pusat Penilaian',
+    description: 'Reviving the language of the divine.',
     iconBg: 'bg-emerald-500'
   },
   {
     icon: 'lifestyle',
     title: 'Lifestyle',
-    description: 'teknologi membantu manusia dalam membuat, mengubah, menyediakan informasi.',
+    description: 'Harmonizing modern living with Vedic values.',
     iconBg: 'bg-amber-500'
   }
 ];

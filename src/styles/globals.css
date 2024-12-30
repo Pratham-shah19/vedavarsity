@@ -181,3 +181,7 @@
     background-position: 0% 100%, 100% 100%, 200% 100%;
   }
 }
+
+.slick-dots {
+  bottom: -35px !important;
+}

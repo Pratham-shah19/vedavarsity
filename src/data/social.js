@@ -2,7 +2,7 @@ import {
   RiFacebookFill,
   RiInstagramLine,
   RiLinkedinFill,
-  RiTwitterFill,
+  RiTwitterXFill,
   RiWhatsappLine,
   RiYoutubeFill
 } from 'react-icons/ri';
@@ -24,7 +24,7 @@ export const socialLinks = [
     label: 'linkedin'
   },
   {
-    icon: <RiTwitterFill className="h-5 w-5" />,
+    icon: <RiTwitterXFill className="h-5 w-5" />,
     link: 'https://twitter.com/IskconBhagavata',
     label: 'twitter'
   },

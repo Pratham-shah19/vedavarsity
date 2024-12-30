@@ -7,6 +7,7 @@ import MobileNav from './MobileNav';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import Logo from '../shared/Logo';
 import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -37,12 +38,13 @@ const Navbar = () => {
                   {each.dropdown && (
                     <div className="absolute -right-9 z-10 hidden w-40 space-y-2 rounded-md bg-white p-3 shadow-md group-hover:block">
                       {each.dropdown.map((drop) => (
-                        <InLink
+                        <Link
+                          {...(drop.new && { target: '_blank' })}
                           href={drop.link}
                           className="block rounded-md px-2 py-1 capitalize hover:bg-gray-100"
                           key={drop.label}>
                           {drop.label}
-                        </InLink>
+                        </Link>
                       ))}
                     </div>
                   )}

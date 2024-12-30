@@ -1,37 +1,98 @@
-import hgGouranga from 'public/images/testimonial/hg-gouranga.png';
-import hgGourangaDarshan from 'public/images/testimonial/hg-gouranga-d.png';
-import hhVakti from 'public/images/testimonial/hh-vakti.png';
-import hhVanuswami from 'public/images/testimonial/hh-vanuswami.png';
-
 export const testimonials = [
   {
-    image: hgGouranga,
-    name: ' HG Gauranga Das',
+    image: 'boy (0)',
+    name: 'Arun Charan Das',
     quote:
-      'This Bhagavat Mahavidyalaya has a very wonderful role in creating a wonderful environment, ambience and eco-system for the deep immersion into the study of Srimad Bhagavatam analyzing the various meanings, purports and approaches to each and every verse of Srimad Bhagavatam from different angles by which each and every devotee can increase the appreciation and absorption in Krishna.'
+      'Learning Vedic history at Vedavarsity has deepened my connection to our cultural roots and enriched my understanding of ancient traditions.'
   },
   {
-    image: hgGourangaDarshan,
-    name: 'HG Gaurang Darshan Das',
+    image: 'woman (0)',
+    name: 'Sachi Maharani Devi Dasi',
     quote:
-      'It is my great fortune to be associated with the ISKCON Bhagavat Mahavidyalaya and get to speak Srimad Bhagavatam to all these beautiful students who have come here from various parts of the world. It is really wonderful sight to see so many enthusiastic devotees eager to study Srimad Bhagavatam. From the very bottom of my heart, I wish this institute to flourish in the years to come.'
+      'The course beautifully bridges the past and present, making history feel alive and relevant.'
   },
   {
-    image: hhVakti,
-    name: 'HH Bhakti Vijnana Swami',
+    image: 'woman (1)',
+    name: 'Bina Pahuja',
     quote:
-      'The courses at the ISKCON Bhagavat Mahavidyalaya offers the students an opportunity to study the Srimad Bhagavatam in depth and also get the knowledge of siddhanta by studying the sandarbhas of Srila Jiva Gosvami and Sanskrit language. It is very important to learn our siddhanta in a very deep way so that our faith is fixed and also for the practice of our Krishna'
+      'The teachings of the Gita have transformed my perspective on life, helping me find clarity and peace.'
   },
   {
-    image: hhVanuswami,
-    name: 'HH Bhanu Swami',
+    image: 'woman (2)',
+    name: 'Jyoti',
     quote:
-      'This is a very valuable contribution to the students who want to learn theology of the Gaudiya Vaishnava sampradaya. Devotees all over the world should support this project nicely so that ISKCON Bhagavat Mahavidyalaya can go on to expand the range of various courses and develop practical ways of inculcating the knowledge of Krishna to all types of devotees'
+      'Vedavarsity’s Gita sessions are profoundly inspiring and offer practical guidance for daily challenges.'
   },
   {
-    image: hgGourangaDarshan,
-    name: 'HG Gaurang Darshan Das',
+    image: 'woman (3)',
+    name: 'Sapna Mestry',
     quote:
-      'It is my great fortune to be associated with the ISKCON Bhagavat Mahavidyalaya and get to speak Srimad Bhagavatam to all these beautiful students who have come here from various parts of the world. It is really wonderful sight to see so many enthusiastic devotees eager to study Srimad Bhagavatam. From the very bottom of my heart, I wish this institute to flourish in the years to come.'
+      'The parenting course has helped me create a nurturing and value-based environment for my child.'
+  },
+  {
+    image: 'woman (4)',
+    name: 'Deepa Kulkarni',
+    quote:
+      'I’ve learned practical and spiritual tools to raise my children with love, discipline, and wisdom.'
+  },
+  {
+    image: 'boy (1)',
+    name: 'Arvind Ram Avtar',
+    quote:
+      'The Bhakti Yoga course brought me closer to my spiritual essence and strengthened my devotion.'
+  },
+  {
+    image: 'boy (2)',
+    name: 'Omkar Mestry',
+    quote:
+      'Through bhakti practices, I’ve discovered a sense of inner joy and a deeper connection with the divine.'
+  },
+  {
+    image: 'woman (5)',
+    name: 'Bithi Saha',
+    quote:
+      'The Purana sessions are a treasure trove of timeless stories that inspire and guide us in everyday life.'
+  },
+  {
+    image: 'woman (6)',
+    name: 'Harshita',
+    quote:
+      'Listening to these ancient stories has transformed my understanding of dharma and spirituality.'
+  },
+  {
+    image: 'woman (7)',
+    name: 'Raji',
+    quote:
+      'My child loves the engaging activities and has developed a strong appreciation for Indian culture.'
+  },
+  {
+    image: 'woman (8)',
+    name: 'Srilekha Devi Dasi',
+    quote:
+      'This program has helped my child grow holistically, blending education with ethics and creativity.'
+  },
+  {
+    image: 'woman (0)',
+    name: 'Riya Kulkarni',
+    quote:
+      'Learning Sanskrit here has been a joy—its practical approach makes mastering the language accessible and fun.'
+  },
+  {
+    image: 'boy (3)',
+    name: 'Rishab Dev Das',
+    quote:
+      'Vedavarsity’s Sanskrit course has helped me unlock the beauty and depth of ancient texts.'
+  },
+  {
+    image: 'boy (4)',
+    name: 'Pratap Rudra Das',
+    quote:
+      'The lifestyle course has helped me integrate Vedic principles into my daily routine, bringing balance and harmony.'
+  },
+  {
+    image: 'boy (5)',
+    name: 'Ratnesh Sahay',
+    quote:
+      'I’ve found a deeper sense of purpose and alignment in life through this program’s holistic teachings.'
   }
 ];

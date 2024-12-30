@@ -28,7 +28,7 @@ const RelatedContent = ({ relatedCourses }) => {
           }
         }}>
         {relatedCourses.map((course, index) => (
-          <SwiperSlide key={index} className="m-auto pb-5 md:px-2">
+          <SwiperSlide key={index} className="p-5 md:px-2">
             <CourseCard course={course} />
           </SwiperSlide>
         ))}

@@ -7,20 +7,20 @@ export const Book = ({ data }) => {
       <div className="relative aspect-[186.98/242] w-full max-w-[186px] overflow-hidden rounded-md bg-[#F1F1F1] leading-6">
         <Image src={data.image} alt="dummy" layout="fill" objectFit="contain" />
       </div>
-      <div className="flex flex-col flex-grow ml-4">
+      <div className="ml-4 flex flex-grow flex-col">
         <p className="mb-2 text-xl font-semibold text-[#181C2E]">{data.title}</p>
-        <p className="mb-4 h-[40px] text-base leading-[20px] text-[#181C2E]">{data.author}</p>
+        {/* <p className="mb-4 h-[40px] text-base leading-[20px] text-[#181C2E]">{data.author}</p> */}
         <span className="mb-2 text-sm leading-[15px] text-[#181c2e80]">Available Book Formats</span>
         <div className="flex gap-2">
           {data.formats.map((e) => (
             <span
               key={e}
-              className=" rounded bg-[#181c2e80] py-1 px-2 text-xs uppercase leading-[14px] text-white">
+              className=" rounded bg-[#181c2e80] px-2 py-1 text-xs uppercase leading-[14px] text-white">
               {e}
             </span>
           ))}
         </div>
-        <span className="mt-auto mb-2 text-right text-sm leading-[15px] text-[#181c2e80]">
+        <span className="mb-2 mt-auto text-right text-sm leading-[15px] text-[#181c2e80]">
           Buy this book from
         </span>
         <div className="flex justify-end gap-3">
