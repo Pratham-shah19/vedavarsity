@@ -10,7 +10,7 @@ export function Logo() {
       </Link>
       <span className="text-center text-xs md:text-sm">
         Dedicated to his divine grace <br />
-        <b className="text-amber-500">A.C. Bhaktivedanta Swami Prabhupāda.</b>
+        <b className="text-primary">A.C. Bhaktivedanta Swami Prabhupāda.</b>
       </span>
     </div>
   );

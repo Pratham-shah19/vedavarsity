@@ -62,7 +62,7 @@ export function TestimonialsCarousel() {
               <div key={index} className="flex justify-center p-4">
                 <div className="flex h-80 w-full max-w-3xl flex-col justify-between rounded-lg bg-primary p-6 text-white shadow-lg ring-2 ring-yellow-500 sm:flex-row md:h-60">
                   {/* Rating and Score */}
-                  <div className="order-last my-4 flex flex-col items-center justify-center sm:order-first sm:mb-0 sm:mr-8">
+                  {/* <div className="order-last my-4 flex flex-col items-center justify-center sm:order-first sm:mb-0 sm:mr-8">
                     <div className="text-2xl font-bold">{testimony.rating?.toFixed(1) || 3.5}</div>
                     <div className="ml-2 flex">
                       {[1, 2, 3, 4, 5].map((starIndex) => (
@@ -80,7 +80,7 @@ export function TestimonialsCarousel() {
                         </svg>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
 
                   <div>
                     {/* Quote Icon */}

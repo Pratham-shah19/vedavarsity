@@ -12,14 +12,12 @@ const Hero = ({ courseDetails }) => {
 
   useEffect(() => {
     console.log('course details', courseDetails);
-    fetch(`${process.env.NEXT_PUBLIC_INST_URL}/api/ii8n`, {
-      headers: {
-        'X-IBI': courseDetails.bundle.institution_bundle_id
-      }
-    })
-      .then((response) => response.json())
-      .then((result) => setGeoPrice(result))
-      .catch((error) => console.log('geo-locate price error', error));
+    let result = {
+      cost: courseDetails.bundle.cost,
+      position: courseDetails.bundle.position,
+      currency_symbol: courseDetails.bundle.currency_symbol
+    };
+    setGeoPrice(result);
   }, []);
 
   return (

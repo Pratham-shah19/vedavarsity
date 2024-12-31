@@ -20,13 +20,13 @@ const WelcomeSection = () => {
             duration={20}
           />
 
-          <CoolMode>
-            <Button
-              href={'https://whatsapp.com/channel/0029Var5TSW6RGJMUXDTYb1b'}
-              className="mt-4 rounded bg-black px-6 py-2 text-white transition duration-300 hover:bg-gray-800">
-              Join Our Community
-            </Button>
-          </CoolMode>
+          {/* <CoolMode> */}
+          <Button
+            href={'https://whatsapp.com/channel/0029Var5TSW6RGJMUXDTYb1b'}
+            className="mt-4 rounded bg-black px-8 py-2 text-white transition duration-300 hover:bg-gray-800">
+            Join Our Community
+          </Button>
+          {/* </CoolMode> */}
         </div>
 
         <div className="flex justify-end md:w-1/2">

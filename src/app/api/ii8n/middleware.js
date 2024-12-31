@@ -19,11 +19,21 @@ export async function middleware(request) {
 
   const getPrice = await fetchPrice.json();
 
-  return NextResponse.json({
-    ip: clientIP,
-    country: request.geo.country,
-    cost: getPrice.bundle.cost,
-    position: getPrice.bundle.position,
-    currency_symbol: getPrice.bundle.currency_symbol
-  });
+  return new NextResponse(
+    JSON.stringify({
+      ip: clientIP,
+      country: request.geo.country,
+      cost: getPrice.bundle.cost,
+      position: getPrice.bundle.position,
+      currency_symbol: getPrice.bundle.currency_symbol
+    }),
+    {
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*', // Adjust this as needed
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+      }
+    }
+  );
 }

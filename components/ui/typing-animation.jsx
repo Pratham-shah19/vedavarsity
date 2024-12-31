@@ -25,7 +25,7 @@ export default function TypingAnimation({ text, duration = 200, className }) {
   return (
     <h1
       className={cn(
-        'font-display text-center text-5xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm',
+        'text-center text-5xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm',
         className
       )}>
       {displayedText ? displayedText : text}

@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/inss-logo.png" type="image/x-icon" />
         <meta name="p:domain_verify" content="7faeda8d52539112a046a1943a022c62" />
         <noscript>
           <iframe
