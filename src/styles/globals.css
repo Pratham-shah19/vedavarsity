@@ -185,3 +185,10 @@
 .slick-dots {
   bottom: -35px !important;
 }
+
+#google-maps-display img {
+  max-width: none !important;
+  background: none !important;
+  font-size: inherit;
+  font-weight: inherit;
+}

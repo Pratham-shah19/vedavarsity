@@ -18,7 +18,7 @@ export function ContactSection() {
             icon={MapPin}
             title="Office"
             subtitle="Come say hello at our office HQ."
-            contact={`Lorem ipsum dolor\nsit amet, consectetur adipiscing elit.`}
+            contact={`Omaxe Eternity, Vrindavan, Uttar Pradesh, India - 281121`}
           />
           <ContactCard
             icon={Phone}
