@@ -31,9 +31,10 @@ export default function CourseDescription() {
       const data = response.data;
       console.log('API data:', data);
 
-      const courses = data.institute_courses[0]?.course_bundles?.filter(
-        (course) => course.course_type === courseTypeMap[title]
+      const { data: categoryCourses } = await axios.get(
+        `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap[title]}`
       );
+      const courses = categoryCourses.institute_courses[0]?.course_bundles;
 
       setVedvarsity(courses || []);
       setAllTeachers(data.tutors || []);
@@ -51,21 +52,12 @@ export default function CourseDescription() {
     }
   }, [title]);
 
-  const [vedvarsityCourses] = useAtom(coursesAtom);
-
-  const filtered =
-    vedvarsityCourses != null
-      ? vedvarsityCourses.institute_courses[0]?.course_bundles?.filter(
-          (course) => course.course_type === courseTypeMap[title]
-        )
-      : null;
-
   return (
     <>
       <Hero subTitle={subTitles[title]} searchBased={title.split('-').join(' ')} />
       {vedvarsity.length > 0 && (
         <CourseTabs
-          courses={filtered || vedvarsity}
+          courses={vedvarsity}
           title={title.split('-').join(' ')}
           allTeachers={allTeachers}
           allCategories={allCategories[0]?.tag_categories_values || []}

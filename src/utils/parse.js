@@ -5,8 +5,8 @@ export const stringToIntParse = (arrayOfTags, tagId) => {
   return value.replace(/\D/g, '');
 };
 export const findTagValue = (arrayOfTags, tagId) => {
-  let tag = arrayOfTags.filter((eachTag) => eachTag.id == tagId);
-  if (tag.length > 0) {
+  let tag = arrayOfTags?.filter((eachTag) => eachTag.id == tagId);
+  if (tag?.length > 0) {
     let value = tag[0].value[0];
     return value;
   } else {

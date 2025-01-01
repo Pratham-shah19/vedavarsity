@@ -1,5 +1,5 @@
 export default {
-  'live-courses': 2,
-  'self-paced-courses': 1,
-  'school-of-love': 3
+  'live-courses': 10634,
+  'self-paced-courses': 10658,
+  'school-of-love': 10927
 };

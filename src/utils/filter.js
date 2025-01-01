@@ -45,8 +45,8 @@ export const coursesFilter = (courses) => {
 
   let categoryMap = {};
   categoryTypes.forEach((type) => {
-    const categoryData = courses.filter((item) => {
-      const categoryTag = item.tags.find((tag) => tag.label === 'Categories');
+    const categoryData = courses?.filter((item) => {
+      const categoryTag = item?.tags?.find((tag) => tag.label === 'Categories');
       if (categoryTag) {
         const categories = categoryTag.value.map((category) => category.toLowerCase());
         return categories.includes(type);

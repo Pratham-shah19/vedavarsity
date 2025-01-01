@@ -9,8 +9,8 @@ export function Logo() {
         <Image src={logo} alt="INSS Logo" width={180} height={90} priority />
       </Link>
       <span className="text-center text-xs md:text-sm">
-        Dedicated to his divine grace <br />
-        <b className="text-primary">A.C. Bhaktivedanta Swami Prabhupāda.</b>
+        Dedicated To <br />
+        <b className="text-primary">His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda.</b>
       </span>
     </div>
   );
