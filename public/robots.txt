@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ibmedu.org/
+Host: https://vedvarsity.org/
 
 # Sitemaps
-Sitemap: https://ibmedu.org/sitemap.xml
+Sitemap: https://vedvarsity.org/sitemap.xml

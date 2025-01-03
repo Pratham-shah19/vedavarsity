@@ -10,12 +10,12 @@ import {
 export const socialLinks = [
   {
     icon: <RiInstagramLine className="h-5 w-5" />,
-    link: 'https://www.instagram.com/ibmedu/',
+    link: 'https://www.instagram.com/vedvarsity/',
     label: 'instagram'
   },
   {
     icon: <RiFacebookFill className="lg:h-5 lg:w-5" />,
-    link: 'https://www.facebook.com/ibmedu.org/',
+    link: 'https://www.facebook.com/vedvarsity.org/',
     label: 'facebook'
   },
   {

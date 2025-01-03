@@ -14,7 +14,7 @@ const SubscribeTitle = () => {
         Prabhupada.
       </p>
       {/* <OutLink
-        href="https://ibmedu.org/emag-21/"
+        href="https://vedvarsity.org/emag-21/"
         className="inline-block rounded-md bg-primary  py-2 px-9 text-center font-semibold capitalize text-white ring-2 ring-primary hover:bg-[#266ED2]"
       >
         Read Magazines

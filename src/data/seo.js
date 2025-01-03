@@ -1,4 +1,4 @@
-export const mainURL = 'https://ibmedu.org';
+export const mainURL = 'https://vedvarsity.org';
 
 const defaultSEO = {
   defaultTitle: 'Vedavarsity | Unveiling Eternal Knowledge',

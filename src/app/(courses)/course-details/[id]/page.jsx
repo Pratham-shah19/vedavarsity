@@ -132,7 +132,7 @@ const Details = () => {
                   : courseDetails.bundle.img_url
             }
           ],
-          siteName: 'IBMEDU'
+          siteName: 'vedvarsity'
         }}
       /> */}
       <Hero courseDetails={courseDetails} />
