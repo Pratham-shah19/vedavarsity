@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/inss-logo.png" type="image/x-icon" />
         <meta name="p:domain_verify" content="7faeda8d52539112a046a1943a022c62" />
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N4DQH64"
             height="0"
@@ -51,11 +51,11 @@ export default function RootLayout({ children }) {
             style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
-        </noscript>
+        </noscript> */}
       </head>
       <body>
         <Layout>{children}</Layout>
-        <NextScripts />
+        {/* <NextScripts /> */}
       </body>
     </html>
   );
@@ -69,10 +69,6 @@ function NextScripts() {
         src={`https://www.googletagmanager.com/gtag/js?id=G-239ELGF4RC`}
       />
       <Script
-        strategy="afterInteractive"
-        src={`https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js`}
-      />
-      <Script
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -81,23 +77,6 @@ function NextScripts() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-239ELGF4RC');
-          `
-        }}
-      />
-      <Script
-        id="fbpixel-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', ${process.env.NEXT_PUBLIC_FB_PIXEL_ID});
           `
         }}
       />

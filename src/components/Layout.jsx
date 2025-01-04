@@ -9,7 +9,7 @@ const Layout = ({ children, className, SEO }) => {
   return (
     <React.Fragment>
       <iframe
-        src={`${process.env.NEXT_PUBLIC_INST_URL}/js-sdks/signup-sdk/iframe.php?subdomain=${process.env.NEXT_PUBLIC_PORTAL_NAME}`}
+        src={`${INST_URL}/js-sdks/signup-sdk/iframe.php?subdomain=${PORTAL_NAME}`}
         id="iframe"
         className="iframe"
         style={{
