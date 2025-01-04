@@ -14,14 +14,14 @@ export default async function Home() {
   );
 
   let { data: liveCoursesRaw } = await axios.get(
-    `${process.env.API_URL}/institute/${process.env.INST_ID}/courses?categories_ids=${courseTypeMap['live-courses']}`
+    `${process.env.API_URL}/institute/${process.env.INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['live-courses']}`
   );
   let { data: selfPacedCoursesRaw } = await axios.get(
-    `${process.env.API_URL}/institute/${process.env.INST_ID}/courses?categories_ids=${courseTypeMap['self-paced-courses']}`
+    `${process.env.API_URL}/institute/${process.env.INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['self-paced-courses']}`
   );
 
   let { data: schoolOfLoveCoursesRaw } = await axios.get(
-    `${process.env.API_URL}/institute/${process.env.INST_ID}/courses?categories_ids=${courseTypeMap['school-of-love']}`
+    `${process.env.API_URL}/institute/${process.env.INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['school-of-love']}`
   );
   let liveCourses = liveCoursesRaw?.institute_courses[0]?.course_bundles;
   let selfPacedCourses = selfPacedCoursesRaw?.institute_courses[0]?.course_bundles;
