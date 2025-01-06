@@ -1,5 +1,5 @@
 {
-  "name": "vedvarsity-inss",
+  "name": "vedavarsity-inss",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

@@ -9,7 +9,7 @@ import { coursesFilter } from 'utils/filter';
 const CourseFilterTab = ({ instituteCourses, enabledTabs, title }) => {
   const { upcoming, ongoing, comingSoon, categoryMap } = coursesFilter(instituteCourses);
   const scrollContainerRef = useRef(null);
-
+  console.log('courses', instituteCourses);
   const handleScroll = (direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = direction === 'left' ? -200 : 200; // Adjust scroll amount

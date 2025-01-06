@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://vedvarsity.org/
+Host: https://vedavarsity.org/
 
 # Sitemaps
-Sitemap: https://vedvarsity.org/sitemap.xml
+Sitemap: https://vedavarsity.org/sitemap.xml

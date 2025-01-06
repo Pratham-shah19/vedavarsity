@@ -15,7 +15,7 @@ import { useEffect, useState } from 'react';
 //     'Enrol in ISKCON Board Courses to deepen your understanding of spiritual wisdom through Bhagavad Gita, Iskcon Disciple Course, and Bhakti Shastri studies.'
 // };
 export default function CourseDescription() {
-  const [vedvarsity, setVedvarsity] = useState([]);
+  const [vedavarsity, setvedavarsity] = useState([]);
   const [allTeachers, setAllTeachers] = useState([]);
   const [allCategories, setAllCategories] = useState([]);
   const [allLanguages, setAllLanguages] = useState([]);
@@ -36,7 +36,7 @@ export default function CourseDescription() {
       );
       const courses = categoryCourses.institute_courses[0]?.course_bundles;
 
-      setVedvarsity(courses || []);
+      setvedavarsity(courses || []);
       setAllTeachers(data.tutors || []);
       setAllCategories(data.tags.filter((tag) => tag.tag_categories_id === categoriesID) || []);
       setAllLanguages(data.tags.filter((tag) => tag.tag_categories_id === languageTagID) || []);
@@ -55,9 +55,9 @@ export default function CourseDescription() {
   return (
     <>
       <Hero subTitle={subTitles[title]} searchBased={title.split('-').join(' ')} />
-      {vedvarsity.length > 0 && (
+      {vedavarsity.length > 0 && (
         <CourseTabs
-          courses={vedvarsity}
+          courses={vedavarsity}
           title={title.split('-').join(' ')}
           allTeachers={allTeachers}
           allCategories={allCategories[0]?.tag_categories_values || []}

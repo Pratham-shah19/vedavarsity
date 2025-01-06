@@ -139,7 +139,7 @@ const CourseTabs = ({ courses, allTeachers, allCategories, enabledTabs, title, a
         </Tabs>
         {/* if completed courses are present then print */}
         {/* {!(
-          title === 'Vedvarsity' ||
+          title === 'vedavarsity' ||
           title === 'Ancient-Wisdom' ||
           title === 'Kids-Parents'
         ) &&

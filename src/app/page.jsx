@@ -41,12 +41,13 @@ export default async function Home() {
   };
 
   return (
-    <div className="">
-      <WelcomeSection />
+    <>
+      {/* <WelcomeSection /> */}
+      <img src={'/hero_banner.jpg'} />
       <CourseListingSection liveCourses={liveCourses} schoolOfLoveCourses={schoolOfLoveCourses} />
       <CourseLibrary />
       <NewsLetterSection />
       <TestimonialsCarousel />
-    </div>
+    </>
   );
 }

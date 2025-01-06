@@ -7,7 +7,9 @@ import { RainbowButton } from '@/components/ui/rainbow-button';
 const WelcomeSection = () => {
   return (
     <section className="m-auto max-w-6xl px-4">
-      <div className="flex flex-col-reverse items-center justify-between md:flex-row">
+      <div
+        style={{ backgroundImage: 'url(/hero_banner.jpg)' }}
+        className="flex flex-col-reverse items-center justify-between md:flex-row">
         <div className="mb-8 text-center md:mb-0 md:w-1/2 md:text-left">
           <BlurIn
             word={'Welcome to Vedavarsity'}

@@ -1,4 +1,4 @@
-export const mainURL = 'https://vedvarsity.org';
+export const mainURL = 'https://vedavarsity.org';
 
 const defaultSEO = {
   defaultTitle: 'Vedavarsity | Unveiling Eternal Knowledge',

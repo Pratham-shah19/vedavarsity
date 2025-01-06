@@ -10,22 +10,22 @@ import {
 export const socialLinks = [
   {
     icon: <RiInstagramLine className="h-5 w-5" />,
-    link: 'https://www.instagram.com/vedvarsity/',
+    link: 'https://www.instagram.com/vedavarsity',
     label: 'instagram'
   },
   {
     icon: <RiFacebookFill className="lg:h-5 lg:w-5" />,
-    link: 'https://www.facebook.com/vedvarsity.org/',
+    link: 'https://www.facebook.com/vedvarsity/',
     label: 'facebook'
   },
   {
     icon: <RiLinkedinFill className="h-5 w-5" />,
-    link: 'https://www.linkedin.com/in/iskcon-bhagavata-mahavidyalaya-b160a4250',
+    link: 'https://www.linkedin.com/company/vedavarsity/',
     label: 'linkedin'
   },
   {
     icon: <RiTwitterXFill className="h-5 w-5" />,
-    link: 'https://twitter.com/IskconBhagavata',
+    link: 'https://twitter.com/vedavarsity',
     label: 'twitter'
   },
   {
