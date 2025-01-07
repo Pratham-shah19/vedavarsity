@@ -12,6 +12,10 @@ export function Logo() {
         Dedicated To <br />
         <b className="text-primary">His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda.</b>
       </span>
+      <span className="mt-2 text-center text-xs md:text-sm">
+        Inspired By <br />
+        <b className="text-primary">Sri Srimad Gaur Krishna Das Goswami.</b>
+      </span>
     </div>
   );
 }

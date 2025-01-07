@@ -30,7 +30,7 @@ export const socialLinks = [
   },
   {
     icon: <RiWhatsappLine className="h-5 w-5" />,
-    link: 'https://wa.me/+919528006565',
+    link: 'https://whatsapp.com/channel/0029Var5TSW6RGJMUXDTYb1b',
     label: 'whatsapp'
   },
   {
