@@ -3,9 +3,9 @@ import { subTitles } from '@/src/data/courseSubTitles';
 import courseTypeMap from '@/src/data/courseTypeMap';
 import { categoriesID, languageTagID } from '@/src/data/tags';
 import axios from 'axios';
-import CourseTabs, { coursesAtom } from 'components/listing/CourseTabs';
+import CourseTabs from 'components/listing/CourseTabs';
 import Hero from 'components/listing/Hero';
-import { useAtom } from 'jotai';
+import { atom, useAtom } from 'jotai';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -14,7 +14,13 @@ import { useEffect, useState } from 'react';
 //   description:
 //     'Enrol in ISKCON Board Courses to deepen your understanding of spiritual wisdom through Bhagavad Gita, Iskcon Disciple Course, and Bhakti Shastri studies.'
 // };
+export const coursesAtom = atom(null);
+
 export default function CourseDescription() {
+  let [vedvarsityCourses] = useAtom(coursesAtom);
+
+  let filtered =
+    vedvarsityCourses != null ? vedvarsityCourses.institute_courses[0]?.course_bundles : null;
   const [vedavarsity, setvedavarsity] = useState([]);
   const [allTeachers, setAllTeachers] = useState([]);
   const [allCategories, setAllCategories] = useState([]);
@@ -57,7 +63,7 @@ export default function CourseDescription() {
       <Hero subTitle={subTitles[title]} searchBased={title.split('-').join(' ')} />
       {vedavarsity.length > 0 && (
         <CourseTabs
-          courses={vedavarsity}
+          courses={filtered !== null ? filtered : vedavarsity}
           title={title.split('-').join(' ')}
           allTeachers={allTeachers}
           allCategories={allCategories[0]?.tag_categories_values || []}

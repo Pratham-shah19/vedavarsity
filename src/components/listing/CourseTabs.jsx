@@ -7,13 +7,12 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import { coursesFilter } from 'utils/filter';
 import FilterCourse from './FilterCourse';
 
-export const coursesAtom = atom(null);
 export const loadingAtom = atom(false);
 
 const CourseTabs = ({ courses, allTeachers, allCategories, enabledTabs, title, allLanguages }) => {
   const [loadingState] = useAtom(loadingAtom);
   const [tabIndex, setTabIndex] = useState(0);
-  const { upcoming, ongoing, comingSoon, categoryMap } = coursesFilter(courses);
+  let { upcoming, ongoing, comingSoon, categoryMap } = coursesFilter(courses);
   const scrollContainerRef = useRef(null);
   const handleScroll = (direction) => {
     if (scrollContainerRef.current) {

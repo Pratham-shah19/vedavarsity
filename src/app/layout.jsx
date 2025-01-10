@@ -8,10 +8,11 @@ import Layout from 'components/Layout';
 
 export const metadata = {
   title: {
-    default: 'Vedavarsity | Unveiling Eternal Knowledge'
+    default:
+      'Vedavarsity: Explore Vedic Wisdom, Gita Insights, Puranas, Srimad Bhagavatam, Parenting & Relationship Courses at the School of Love'
   },
   description:
-    'Explore profound teachings of the Bhagavad Gita at Vedavarsity. Learn Bhakti Shashtri, Teacher Training Course, and IDC. Enrol Now!',
+    'Let the timeless teachings of the Bhagavad Gita, Vedic history, and Bhakti Yoga guide you on a journey of personal growth. Learn how to raise children with love and values, discover fun after-school programs, and dive into the world of Sanskrit. At our "School of Love," we offer relationship courses to help you build deeper, more fulfilling connections with those who matter most.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -19,13 +20,13 @@ export const metadata = {
     site_name: 'INSS',
     images: [
       {
-        url: `${mainURL}/iskconseo.png`
+        url: `${mainURL}/inss-logo.png`
       }
     ]
   },
   twitter: {
-    handle: '@IskconBhagavata',
-    site: '@IskconBhagavata',
+    handle: '@Vedavarsity',
+    site: '@vedavarsity',
     cardType: 'summary_large_image'
   }
 };

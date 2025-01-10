@@ -1,7 +1,8 @@
-export const mainURL = 'https://vedavarsity.org';
+export const mainURL = 'https://vedavarsity.com';
 
 const defaultSEO = {
-  defaultTitle: 'Vedavarsity | Unveiling Eternal Knowledge',
+  defaultTitle:
+    'Vedavarsity: Explore Vedic Wisdom, Gita Insights, Puranas, Srimad Bhagavatam, Parenting & Relationship Courses at the School of Love',
   description:
     'Explore profound teachings of the Bhagavad Gita at Iskcon Bhagavata Mahavidyalaya. Learn Bhakti Shashtri, Teacher Training Course, and IDC. Enrol Now!',
   openGraph: {
@@ -11,13 +12,13 @@ const defaultSEO = {
     site_name: 'INSS',
     images: [
       {
-        url: `${mainURL}/iskconseo.png`
+        url: `${mainURL}/inss-logo.png`
       }
     ]
   },
   twitter: {
-    handle: '@IskconBhagavata',
-    site: '@IskconBhagavata',
+    handle: '@Vedavarsity',
+    site: '@vedavaristy',
     cardType: 'summary_large_image'
   }
 };

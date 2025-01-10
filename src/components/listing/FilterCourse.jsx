@@ -2,7 +2,8 @@ import { Listbox } from '@headlessui/react';
 import { useAtom } from 'jotai';
 import { useEffect, useState } from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri';
-import { coursesAtom, loadingAtom } from './CourseTabs';
+import { loadingAtom } from './CourseTabs';
+import { coursesAtom } from '@/src/app/(courses)/[title]/page';
 
 const FilterCourse = ({ teachers, categories, languages, title }) => {
   const [isDropdownListOpen, setDropdownListOpen] = useState(false);
