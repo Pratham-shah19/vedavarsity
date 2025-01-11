@@ -12,7 +12,7 @@ export const metadata = {
       'Vedavarsity: Explore Vedic Wisdom, Gita Insights, Puranas, Srimad Bhagavatam, Parenting & Relationship Courses at the School of Love'
   },
   description:
-    'Let the timeless teachings of the Bhagavad Gita, Vedic history, and Bhakti Yoga guide you on a journey of personal growth. Learn how to raise children with love and values, discover fun after-school programs, and dive into the world of Sanskrit. At our "School of Love," we offer relationship courses to help you build deeper, more fulfilling connections with those who matter most.',
+    'Explore the timeless wisdom of Srimad Bhagavatam,  Bhagavad Gita, and the transformative power of Bhakti Yoga. Learn how to parent with love and values, immerse your children with after-school activities, Learn Sanskrit and deepen your loving relationships through our "School of Love" courses, offering profound insights into building and sustaining meaningful connections.',
   openGraph: {
     type: 'website',
     locale: 'en_US',

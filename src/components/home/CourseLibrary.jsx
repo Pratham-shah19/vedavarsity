@@ -26,9 +26,9 @@ const courses = [
     iconBg: 'bg-emerald-500'
   },
   {
-    icon: 'puranas',
-    title: 'Purana',
-    description: 'Stories that inspire and enlighten across ages.',
+    icon: 'school_of_love',
+    title: 'School Of Love',
+    description: 'Learn the art of loving and being loved.',
     iconBg: 'bg-emerald-500'
   },
   {
