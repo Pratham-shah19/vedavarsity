@@ -49,7 +49,7 @@ const CourseCard = ({ course, title }) => {
             }}
           />
           {course.course_start_date && title !== 'Self paced courses' && (
-            <span className="text-sm font-semibold text-primary">
+            <span className="text-sm font-semibold text-white">
               Start date -{' '}
               <time>
                 {dayjs(course.course_start_date * 1000)

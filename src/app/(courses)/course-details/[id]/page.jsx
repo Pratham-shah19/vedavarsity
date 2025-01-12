@@ -54,7 +54,7 @@ const Details = () => {
           `${process.env.NEXT_PUBLIC_API_URL}/public/tutor/class/curriculum/${courseIdData.courses[0].course_id}?institution_bundle_id=${institutionBundleID}`
         );
         setFullCourseContent(fullCourseContentData);
-
+        console.log('full course', fullCourseContentData);
         // Fetch detailed schedule
         const { data: detailScheduleData } = await axios.get(
           `${process.env.NEXT_PUBLIC_API_URL}/public/masterbatches/${
@@ -62,6 +62,7 @@ const Details = () => {
           }/classes?offset=${new Date().getTimezoneOffset()}`
         );
         setDetailSchedule(detailScheduleData);
+        console.log('detailed schedule', detailScheduleData);
 
         // Fetch related courses
         if (findTagValue(courseDetailsData.tags, categoriesID) !== 'N/A') {
