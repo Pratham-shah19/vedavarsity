@@ -20,16 +20,18 @@ const CourseCard = ({ course, title }) => {
         <Image
           src={course.img_url || '/images/course-default.png'}
           alt="Course Image"
-          layout="fill"
+          // layout="fill"
+          width={300}
+          height={180}
           objectFit="cover"
-          className="rounded-t-xl"
+          // className="rounded-t-xl"
         />
       </div>
 
       {/* Course Details */}
       <div className="flex flex-col gap-4 px-6 py-4">
         <h3 className="line-clamp-2 text-xl font-bold">{course.bundle_name}</h3>
-        <p className="line-clamp-2 text-sm">{course.bundle_description}</p>
+        {/* <p className="line-clamp-2 text-sm">{course.bundle_description}</p> */}
       </div>
 
       <div className="flex flex-col gap-2 px-6 py-2">

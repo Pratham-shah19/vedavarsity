@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
             Privacy Policy for vedavarsity
           </h1>
           <p>
-            At vedavarsity, accessible from https://vedavarsity.org/, one of our main priorities is
+            At vedavarsity, accessible from https://vedavarsity.com/, one of our main priorities is
             the privacy of our visitors. This Privacy Policy document contains types of information
             that is collected and recorded by vedavarsity and how we use it.
           </p>

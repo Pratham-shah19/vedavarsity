@@ -11,7 +11,7 @@ const Faq = () => {
           <ol>
             <li>
               Login into your account from{' '}
-              <OutLink href="https://www.vedavarsity.org/">https://www.vedavarsity.org/</OutLink>
+              <OutLink href="https://www.vedavarsity.com/">https://www.vedavarsity.com/</OutLink>
             </li>
             <li>The live classes section is on the right side of the screen.</li>
             <li>Under today’s classes ‘Join’ button will appear.</li>
