@@ -15,7 +15,7 @@ export const socialLinks = [
   },
   {
     icon: <RiFacebookFill className="lg:h-5 lg:w-5" />,
-    link: 'https://www.facebook.com/vedvarsity/',
+    link: '#',
     label: 'facebook'
   },
   {
@@ -35,7 +35,7 @@ export const socialLinks = [
   },
   {
     icon: <RiYoutubeFill className="h-5 w-5" />,
-    link: 'https://www.youtube.com/channel/UCCumR1TKFJMqL0J88tnB53A',
+    link: '#',
     label: 'youtube'
   }
 ];
