@@ -10,17 +10,17 @@ import {
 export const socialLinks = [
   {
     icon: <RiInstagramLine className="h-5 w-5" />,
-    link: 'https://www.instagram.com/vedavarsity',
+    link: 'https://www.instagram.com/inssmedia?igsh=MTBhc3ViZ2Z4OHN2cA==',
     label: 'instagram'
   },
   {
     icon: <RiFacebookFill className="lg:h-5 lg:w-5" />,
-    link: '#',
+    link: 'https://www.facebook.com/profile.php?id=61566447461060',
     label: 'facebook'
   },
   {
     icon: <RiLinkedinFill className="h-5 w-5" />,
-    link: 'https://www.linkedin.com/company/vedavarsity/',
+    link: 'http://www.linkedin.com/in/in-service-of-srimad-bhagavatam-008460347',
     label: 'linkedin'
   },
   {
@@ -35,7 +35,7 @@ export const socialLinks = [
   },
   {
     icon: <RiYoutubeFill className="h-5 w-5" />,
-    link: '#',
+    link: 'https://youtube.com/@insslife?si=m5of5ufQu2QXRJBO',
     label: 'youtube'
   }
 ];

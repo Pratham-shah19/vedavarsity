@@ -8,11 +8,10 @@ import Layout from 'components/Layout';
 
 export const metadata = {
   title: {
-    default:
-      'Vedavarsity: Explore Vedic Wisdom, Gita Insights, Puranas, Srimad Bhagavatam, Parenting & Relationship Courses at the School of Love'
+    default: 'Vedavarsity: Vedic History, Relationships & lifestyle.'
   },
   description:
-    'Explore the timeless wisdom of Srimad Bhagavatam,  Bhagavad Gita, and the transformative power of Bhakti Yoga. Learn how to parent with love and values, immerse your children with after-school activities, Learn Sanskrit and deepen your loving relationships through our "School of Love" courses, offering profound insights into building and sustaining meaningful connections.',
+    'Explore the wisdom of the Srimad Bhagavatam and Bhagavad Gita, and learn Bhakti Yoga and value-based parenting. Join our "School of Love" to build meaningful relationships and connect with your family!',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -37,6 +36,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/inss-logo.png" type="image/x-icon" />
         <meta name="p:domain_verify" content="7faeda8d52539112a046a1943a022c62" />
+        <meta
+          name="keywords"
+          content="ancient history, vedic history, school of love, gita     
+        Wisdom, srimad Bhagavatam and Bhagavata purana"
+        />
         {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N4DQH64"

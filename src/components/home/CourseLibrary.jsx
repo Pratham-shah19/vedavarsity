@@ -3,7 +3,7 @@ import SparklesText from '../../../components/ui/sparkles-text';
 const courses = [
   {
     icon: 'history',
-    title: 'Vedic History',
+    title: 'Vedic History and Puranas',
     description: 'Preserving ancient wisdom for modern understanding.',
     iconBg: 'bg-primary'
   },
