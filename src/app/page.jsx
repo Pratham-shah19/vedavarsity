@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <>
-      <img src="/hero_banner.jpg" alt="Hero Banner" />
+      <img width={'100%'} src="/hero_banner.jpg" alt="Hero Banner" />
       <CourseListingSection liveCourses={liveCourses} schoolOfLoveCourses={schoolOfLoveCourses} />
       <CourseLibrary />
       <NewsLetterSection />

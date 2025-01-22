@@ -35,10 +35,12 @@ const SubscribeForm = () => {
 
   const onSubmit = async (data, e) => {
     setLoading(true);
-    fetch('/api/contact', {
+    fetch('https://api.sendinblue.com/v3/contacts', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'api-key': process.env.NEXT_PUBLIC_SENDINBLUE_KEY
       },
       body: JSON.stringify({
         attributes: {
@@ -53,8 +55,8 @@ const SubscribeForm = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.code == 400) {
-          toast.error(data.message);
+        if (data.code) {
+          toast.error(data.code.split('_').join(' '));
           setLoading(false);
         } else {
           toast.success('Successfully Subscribed');
@@ -71,7 +73,7 @@ const SubscribeForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="p-5 rounded-lg shadow-lg space-y-7 shadow-mist lg:p-9">
+      className="space-y-7 rounded-lg p-5 shadow-lg shadow-mist lg:p-9">
       <h3 className="text-xl font-bold text-primary lg:text-2xl">Subscribe to our magazine</h3>
       {fields.map((field) => (
         <label
@@ -84,7 +86,7 @@ const SubscribeForm = () => {
             name={field.fieldName}
             id={field.fieldName}
             placeholder={`Enter your ${field.label}`}
-            className="block w-full p-2 mt-1 font-medium border-2 border-black rounded-md outline-none focus:border-primary "
+            className="mt-1 block w-full rounded-md border-2 border-black p-2 font-medium outline-none focus:border-primary "
             required
             maxLength={field.maxLength}
             {...register(field.fieldName)}
@@ -95,7 +97,7 @@ const SubscribeForm = () => {
       <label htmlFor="phone-admin" className="block font-semibold capitalize">
         Phone
         <div className="relative flex">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             +
           </div>
           <input
@@ -112,7 +114,7 @@ const SubscribeForm = () => {
             id={'phone'}
             type="number"
             required
-            className="flex-1 block w-full min-w-0 p-2 font-medium border-2 border-black rounded-none rounded-r-lg outline-none appearance-none focus:border-primary "
+            className="block w-full min-w-0 flex-1 appearance-none rounded-none rounded-r-lg border-2 border-black p-2 font-medium outline-none focus:border-primary "
             placeholder="Enter your Mobile Number"
             {...register('phone')}
           />
@@ -121,7 +123,7 @@ const SubscribeForm = () => {
       {/*TODO: implement Loader */}
       <button
         type="submit"
-        className={`rounded-md bg-secondary py-2 px-8 font-semibold hover:bg-opacity-90 ${
+        className={`rounded-md bg-secondary px-8 py-2 font-semibold hover:bg-opacity-90 ${
           loading && 'animate-pulse'
         }`}
         disabled={loading}>

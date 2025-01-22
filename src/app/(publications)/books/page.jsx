@@ -13,10 +13,12 @@ const Books = () => {
 
   const onSubmit = async (data, e) => {
     setLoading(true);
-    fetch('/api/contact', {
+    fetch('https://api.sendinblue.com/v3/contacts', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'api-key': process.env.NEXT_PUBLIC_SENDINBLUE_KEY
       },
       body: JSON.stringify({
         attributes: {
@@ -36,8 +38,8 @@ const Books = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.code == 400) {
-          toast.error(data.message);
+        if (data.code) {
+          toast.error(data.code.split('_').join(' '));
           setLoading(false);
         } else {
           toast.success('Successfully Sent');
