@@ -3,8 +3,8 @@ export const navLinks = [
     link: '/',
     label: 'home'
   },
-  { link: '/live-courses', label: 'Live courses' },
-  { link: '/school-of-love', label: 'School Of Love' },
+  { link: '/bhaktiyoga', label: 'Bhaktiyoga' },
+  { link: '/lifestyle', label: 'Lifestyle' },
   // { link: '/self-paced-courses', label: 'Self paced courses' },
   {
     link: '/#',

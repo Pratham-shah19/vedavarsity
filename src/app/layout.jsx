@@ -8,7 +8,7 @@ import Layout from 'components/Layout';
 
 export const metadata = {
   title: {
-    default: 'Vedavarsity: Vedic History, Relationships & lifestyle.'
+    default: 'Vedavarsity: Bhaktiyoga, Relationship & Lifestyle.'
   },
   description:
     'Explore the wisdom of the Srimad Bhagavatam and Bhagavad Gita, and learn Bhakti Yoga and value-based parenting. Join our "School of Love" to build meaningful relationships and connect with your family!',
