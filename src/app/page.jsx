@@ -11,9 +11,10 @@ import CourseLibrary from '@/src/components/home/CourseLibrary';
 import axios from 'axios';
 
 export default function Home() {
-  const [liveCourses, setLiveCourses] = useState([]);
+  const [bhaktiYogaCourses, setBhaktiYogaCourses] = useState([]);
   const [selfPacedCourses, setSelfPacedCourses] = useState([]);
   const [schoolOfLoveCourses, setSchoolOfLoveCourses] = useState([]);
+  const [lifeStyleCourses, setLifeStyleCourses] = useState([]);
   const [communityLinks, setCommunityLinks] = useState({ whatsapp: '', telegram: '' });
 
   useEffect(() => {
@@ -25,23 +26,28 @@ export default function Home() {
         );
 
         // Fetch course data
-        const [liveCoursesRes, selfPacedCoursesRes, schoolOfLoveCoursesRes] = await Promise.all([
-          axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['bhaktiyoga']}`
-          ),
-          axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['self-paced-courses']}`
-          ),
-          axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['lifestyle']}`
-          )
-        ]);
+        const [bhaktiYogaRes, selfPacedCoursesRes, schoolOfLoveCoursesRes, lifeStyleCoursesRes] =
+          await Promise.all([
+            axios.get(
+              `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['bhaktiyoga']}`
+            ),
+            axios.get(
+              `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['self-paced-courses']}`
+            ),
+            axios.get(
+              `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['school-of-love']}`
+            ),
+            axios.get(
+              `${process.env.NEXT_PUBLIC_API_URL}/institute/${process.env.NEXT_PUBLIC_INST_ID}/courses?get_tutors=1&get_tags=1&get_student_count=1&categories_ids=${courseTypeMap['lifestyle']}`
+            )
+          ]);
 
-        setLiveCourses(liveCoursesRes.data?.institute_courses[0]?.course_bundles || []);
+        setBhaktiYogaCourses(bhaktiYogaRes.data?.institute_courses[0]?.course_bundles || []);
         setSelfPacedCourses(selfPacedCoursesRes.data?.institute_courses[0]?.course_bundles || []);
         setSchoolOfLoveCourses(
           schoolOfLoveCoursesRes.data?.institute_courses[0]?.course_bundles || []
         );
+        setLifeStyleCourses(lifeStyleCoursesRes.data?.institute_courses[0]?.course_bundles || []);
 
         // Extract and parse community links
         let communityLinksRaw = website_data.tags
@@ -65,7 +71,11 @@ export default function Home() {
   return (
     <>
       <img width={'100%'} src="/hero_banner.jpg" alt="Hero Banner" />
-      <CourseListingSection liveCourses={liveCourses} schoolOfLoveCourses={schoolOfLoveCourses} />
+      <CourseListingSection
+        bhaktiYogaCourses={bhaktiYogaCourses}
+        schoolOfLoveCourses={schoolOfLoveCourses}
+        lifeStyleCourses={lifeStyleCourses}
+      />
       <CourseLibrary />
       <NewsLetterSection />
       <TestimonialsCarousel />

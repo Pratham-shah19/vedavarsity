@@ -7,7 +7,7 @@ const Logo = ({ isBlack }) => {
   return (
     <InLink href="/" className="h-14 w-16 md:h-auto md:w-auto">
       {isBlack ? (
-        <Image src={logoImg} width={120} alt="vedavarsity logo" placeholder="blur" />
+        <Image src={logoImg} width={100} alt="vedavarsity logo" placeholder="blur" />
       ) : (
         <Image src={logoWhite} alt="vedavarsity logo" placeholder="blur" />
       )}

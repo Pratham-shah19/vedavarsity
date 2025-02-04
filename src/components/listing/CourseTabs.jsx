@@ -37,7 +37,7 @@ const CourseTabs = ({ courses, allTeachers, allCategories, enabledTabs, title, a
 
   // If no enabledTabs prop is provided, show all tabs
   const tabsToShow =
-    title === 'bhaktiyoga' || title === 'lifestyle'
+    title === 'bhaktiyoga' || title === 'school of love' || title === 'lifestyle'
       ? tabLists.map((tab, index) => ({ ...tab, index }))
       : categoryTabLists.map((tab, index) => ({ ...tab, index }));
 
@@ -47,7 +47,7 @@ const CourseTabs = ({ courses, allTeachers, allCategories, enabledTabs, title, a
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <div className="mb-4 flex items-center space-x-2">
             {/* Left Scroll Button */}
-            {title !== 'bhaktiyoga' && title !== 'lifestyle' && (
+            {title !== 'bhaktiyoga' && title !== 'lifestyle' && title !== 'school of love' && (
               <button
                 onClick={() => handleScroll('left')}
                 className="rounded-full bg-gray-200 p-2 shadow-md hover:bg-gray-300 md:p-3">
@@ -83,7 +83,7 @@ const CourseTabs = ({ courses, allTeachers, allCategories, enabledTabs, title, a
             </TabList>
 
             {/* Right Scroll Button */}
-            {title !== 'bhaktiyoga' && title !== 'lifestyle' && (
+            {title !== 'bhaktiyoga' && title !== 'lifestyle' && title !== 'school of love' && (
               <button
                 onClick={() => handleScroll('right')}
                 className="rounded-full bg-gray-200 p-2 shadow-md hover:bg-gray-300 md:p-3">

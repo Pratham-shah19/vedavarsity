@@ -48,7 +48,7 @@ export default function About() {
           <div className="text-center md:w-1/3">
             {/* Placeholder for Logo */}
             <img
-              src="/inss-logo.png"
+              src="/inss.png"
               alt="INSS Logo"
               className="mx-auto h-48 w-48 object-contain md:h-64 md:w-64"
             />

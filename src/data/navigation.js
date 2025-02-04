@@ -4,7 +4,9 @@ export const navLinks = [
     label: 'home'
   },
   { link: '/bhaktiyoga', label: 'Bhaktiyoga' },
-  { link: '/lifestyle', label: 'Lifestyle' },
+
+  // { link: '/lifestyle', label: 'Lifestyle' },
+  { link: '/school-of-love', label: 'School of Love' },
   // { link: '/self-paced-courses', label: 'Self paced courses' },
   {
     link: '/#',

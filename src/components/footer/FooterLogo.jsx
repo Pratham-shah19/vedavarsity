@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from 'public/inss-logo.png';
+import logo from 'public/inss.png';
 
 export function Logo() {
   return (
