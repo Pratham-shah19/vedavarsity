@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className={`relative bg-white shadow-mist/25 ${!isNavOpen && 'shadow-xl'}`}>
-      <div className="m-auto flex h-20 max-w-6xl items-center justify-between px-3 md:h-[100px]">
+      <div className="m-auto flex h-20 max-w-7xl items-center justify-between px-3 md:h-[100px]">
         <Logo isBlack={true} />
         <div className="flex">
           <ul className="mr-10 hidden items-center space-x-10 lg:flex">
