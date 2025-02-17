@@ -1,7 +1,7 @@
-import 'swiper/css'; // Import global CSS
+import 'swiper/css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../styles/globals.css'; // Import custom global CSS
+import '../styles/globals.css';
 import Script from 'next/script';
 import { mainURL } from 'data/seo';
 import Layout from 'components/Layout';
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: mainURL, //TODO: Change this on Domain name change
+    url: mainURL,
     site_name: 'INSS',
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="shortcut icon" href="/inss-logo.png" type="image/x-icon" />
         <meta name="p:domain_verify" content="7faeda8d52539112a046a1943a022c62" />
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
           content="ancient history, vedic history, school of love, gita     
         Wisdom, srimad Bhagavatam and Bhagavata purana"
         />
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N4DQH64"
             height="0"
@@ -56,17 +56,19 @@ export default function RootLayout({ children }) {
             style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
-        </noscript> */}
+        </noscript>
       </head>
       <body>
         <Layout>{children}</Layout>
-        {/* <NextScripts /> */}
+        <NextScripts />
       </body>
     </html>
   );
 }
 
 function NextScripts() {
+  const isProduction = process.env.NODE_ENV === 'production';
+
   return (
     <>
       <Script
@@ -85,6 +87,54 @@ function NextScripts() {
           `
         }}
       />
+
+      {isProduction && (
+        <>
+          <Script
+            id="clarity-script"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "hbgl9z0cfv");
+              `
+            }}
+          />
+          <Script
+            id="sendinblue-script"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function() {
+                  window.sib = {
+                    equeue: [],
+                    client_key: "v83lgprxcb0vw3vm330yybau"
+                  };
+                  window.sendinblue = {};
+                  for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
+                    (function(k) {
+                      window.sendinblue[k] = function() {
+                        var arg = Array.prototype.slice.call(arguments);
+                        (window.sib[k] || function() {
+                          var t = {};
+                          t[k] = arg;
+                          window.sib.equeue.push(t);
+                        })(arg[0], arg[1], arg[2], arg[3]);
+                      };
+                    })(j[i]);
+                  }
+                  var n = document.createElement("script"),
+                      i = document.getElementsByTagName("script")[0];
+                  n.type = "text/javascript", n.id = "sendinblue-js", n.async = !0, n.src = "https://sibautomation.com/sa.js?key=" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();
+                })();
+              `
+            }}
+          />
+        </>
+      )}
     </>
   );
 }
