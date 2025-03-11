@@ -73,7 +73,7 @@ function NextScripts() {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-239ELGF4RC`}
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-16918572336`}
       />
       <Script
         id="gtag-init"
@@ -83,7 +83,7 @@ function NextScripts() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-239ELGF4RC');
+            gtag('config', 'AW-16918572336');
           `
         }}
       />

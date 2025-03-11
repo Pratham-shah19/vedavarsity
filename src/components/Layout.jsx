@@ -33,7 +33,7 @@ const Layout = ({ children, className, SEO }) => {
         backgroundColor: '#fff',
         ctaText: 'Athāto brahma jijñāsā',
         borderRadius: '25',
-        autoShow: true,
+        autoShow: false,
         phoneNumber: '919634998911'
       }
     };
