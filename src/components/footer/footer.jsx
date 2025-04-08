@@ -21,7 +21,7 @@ export function Footer() {
           <Logo />
           <Navigation />
           <div className="mt-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-gray-600">© 2025 INSS All rights reserved.</p>
+            <p className="text-gray-600">© 2025 Vedavarsity All rights reserved.</p>
             <SocialLinks />
           </div>
         </div>
