@@ -3,7 +3,7 @@ import { MdEmail } from 'react-icons/md';
 import { RiWhatsappFill } from 'react-icons/ri';
 
 export const vedavarsityEmail = 'info@vedavarsity.com';
-export const vedavarsityPhone = '+91 98924 08914';
+export const vedavarsityPhone = '+91 96349 98911';
 
 export const contacts = [
   {
